@@ -32,12 +32,17 @@ npm install redis@3.1.2 --save
 npm install -g mysql 
 
 三、部署
+
 #安装
+
 npm install -g pm2
+
 #于根目录下运行
+
 pm2 start ./app.js --name hw --watch
 
 #查看日志
+
 pm2 logs
 
 
