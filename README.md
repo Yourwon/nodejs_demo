@@ -31,6 +31,11 @@ npm install redis@3.1.2 --save
 
 npm install -g mysql 
 
+
+#mongoose
+
+npm install mongoose --save
+
 三、部署
 
 #安装
