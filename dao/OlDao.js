@@ -1,3 +1,4 @@
+//redis
 var client = require('../conf/RedisConf');
 var resResult = require('../common/ResponseResult');
 

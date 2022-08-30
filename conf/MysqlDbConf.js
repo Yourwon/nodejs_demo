@@ -16,7 +16,7 @@ var pool = mysql.createPool(dbconf);
 var executeSql = function(sql, param){
     // console.log('-----sql -----'+ sql);
     console.log(param);
-    //防注入mysql.format、connection.query的点位符?
+    //防注入mysql.format、connection.query的占位符?
     sql = mysql.format(sql, param);
     console.log(sql);
     return new Promise((resolve, reject)=>{
