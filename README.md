@@ -59,7 +59,8 @@ pm2 logs
 
 #排查端口占用，cmd用find ,powershell用findstr， 查找占用3000端口的PID
 
-findstr  netstat -ano | findstr "3000"
+findstr  
+netstat -ano | findstr "3000"
 
 #查看并结束占用
 
