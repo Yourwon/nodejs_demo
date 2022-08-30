@@ -67,13 +67,3 @@ netstat -ano | findstr "3000"
 tasklist
 
 taskkill /f /pid 8624
-
-#pm2命令
-#查看进程
-# pm2 list
-
-#停止 id
-# pm2 stop 0
-
-#删除
-# pm2 delete 0 
