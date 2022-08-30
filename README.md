@@ -31,6 +31,11 @@ npm install redis@3.1.2 --save
 
 npm install -g mysql 
 
+
+#mongoose
+
+npm install mongoose --save
+
 三、部署
 
 #安装
@@ -45,6 +50,18 @@ pm2 start ./app.js --name hw --watch
 
 pm2 logs
 
+#pm2基本命令
+
+#查看进程
+#pm2 list
+
+#停止 id
+#pm2 stop 0
+
+#删除
+#pm2 delete 0
+
+
 
 #问题
 
@@ -54,11 +71,11 @@ pm2 logs
 
 #排查端口占用，cmd用find ,powershell用findstr， 查找占用3000端口的PID
 
-findstr  netstat -ano | findstr "3000"
+findstr  
+netstat -ano | findstr "3000"
 
 #查看并结束占用
 
 tasklist
 
 taskkill /f /pid 8624
-
